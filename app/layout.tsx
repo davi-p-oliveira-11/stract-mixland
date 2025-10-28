@@ -17,10 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-[var(--font-space-grotesk)] bg-white text-gray-900 antialiased">
-        <main className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <body className="antialiased">
           {children}
-        </main>
       </body>
     </html>
   );

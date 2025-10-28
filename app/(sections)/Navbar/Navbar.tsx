@@ -96,7 +96,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="bg-black border-t border-gray-800 [@media(min-width:820px)]:hidden">
+        <div className="bg-gray-900 [@media(min-width:820px)]:hidden">
           <ul className="flex flex-col items-center gap-4 py-6 text-sm">
             {navbarData.links.map((link) => (
               <li key={link.href}>
