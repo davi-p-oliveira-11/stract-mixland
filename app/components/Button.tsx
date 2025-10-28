@@ -14,7 +14,7 @@ const Button: FC<ButtonProps> = ({
   className,
   ...props
 }) => {
-  const base = "font-semibold transition cursor-pointer";
+  const base = "font-semibold transition-all duration-200 transform hover:scale-[1.03] cursor-pointer";
 
   const variants = {
     primary: "bg-[#2B59FF] text-white hover:bg-[#2B59FF]",
@@ -23,7 +23,12 @@ const Button: FC<ButtonProps> = ({
 
   const sizeClasses = {
     sm: "px-4 py-2 text-sm rounded-md",
-    md: "w-[120px] h-[45px] text-base rounded-full sm:w-[140px] sm:h-[50px] md:w-[160px] md:h-[60px]",
+    md: `
+    w-[160px] h-[45px] px-[16px] py-[12px] text-sm rounded-sm
+    sm:w-[175px] sm:h-[48px] sm:px-[18px] sm:py-[14px] sm:text-base rounded-sm
+    md:w-[187px] md:h-[50px] md:px-[20px] md:py-[16px] md:text-base rounded-sm
+    lg:w-[200px] lg:h-[55px] lg:text-lg
+  `,
     lg: "px-8 py-4 text-lg rounded-full",
   };
 

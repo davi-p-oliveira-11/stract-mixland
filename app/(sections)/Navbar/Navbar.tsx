@@ -6,12 +6,11 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Button from "@/app/components/Button";
 
-
 // Navbar.tsx (data section)
 interface LinkItem {
   label: string;
   href: string;
-  src?: string; 
+  src?: string;
 }
 
 interface CTAButton {
@@ -36,22 +35,21 @@ const navbarData: NavbarData = {
   },
   links: [
     { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Solutions", href: "#solutions" },
     { label: "Testimonials", href: "#testimonials" },
-    { label: "About", href: "#about" },
+    { label: "Pricing", href: "#pricing" },
   ],
   cta: {
-    text: "Get Started Free",
+    text: "Get Started",
     href: "#cta",
   },
 };
-
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black text-white z-50">
+    <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white z-50">
       <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 py-4 md:px-12">
         {/* Logo */}
         <div className="shrink-0 cursor-pointer">
@@ -66,12 +64,12 @@ export default function Navbar() {
         </div>
 
         {/* Center Links */}
-        <ul className="hidden md:flex space-x-10 text-sm font-light">
+        <ul className="hidden [@media(min-width:820px)]:flex space-x-10 text-base font-semibold">
           {navbarData.links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="font-inter hover:text-[#1668E8] transition-colors duration-200"
+                className="font-inter hover:text-[#1668E8] hover:text-underline transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -80,7 +78,7 @@ export default function Navbar() {
         </ul>
 
         {/* CTA Button */}
-        <div className="hidden md:block">
+        <div className="hidden [@media(min-width:820px)]:block">
           <Button variant="primary" size="md" fullWidth={false}>
             {navbarData.cta.text}
           </Button>
@@ -89,7 +87,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-white"
+          className="[@media(min-width:820px)]:hidden text-white"
           aria-label="Toggle menu"
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -98,7 +96,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="bg-black border-t border-gray-800 md:hidden">
+        <div className="bg-black border-t border-gray-800 [@media(min-width:820px)]:hidden">
           <ul className="flex flex-col items-center gap-4 py-6 text-sm">
             {navbarData.links.map((link) => (
               <li key={link.href}>
@@ -115,7 +113,7 @@ export default function Navbar() {
               variant="primary"
               size="md"
               className="mt-4"
-              fullWidth
+              fullWidth={false}
               onClick={() => setMenuOpen(false)}
             >
               {navbarData.cta.text}
