@@ -1,8 +1,9 @@
+import TestimonialCard from '@/app/components/TestimonialCard'
 import React from 'react'
 
 const TestimonialSection = () => {
   return (
-    <div>TestimonialSection</div>
+    <TestimonialCard />
   )
 }
 
