@@ -3,26 +3,61 @@ import Image from "next/image";
 import FeatureCard from "@/app/components/FeatureCard";
 
 const Features = () => {
+  type FeatureItem = {
+    icon: string;
+    title: string;
+    description: string;
+  };
+
+  const features: FeatureItem[] = [
+    {
+      icon: "/icons/copy-paste.svg",
+      title: "Simply Copy & Paste",
+      description: "Many desktop publishing packages and web page editors now use for them.",
+    },
+    {
+      icon: "/icons/customize.svg",
+      title: "Easy to customize",
+      description: "Many desktop publishing packages and web page editors now use for them.",
+    },
+    {
+      icon: "/icons/vs-code-blue.svg",
+      title: "Made with TailwindCSS",
+      description: "Many desktop publishing packages and web page editors now use for them.",
+    },
+  ];
+
   return (
     <section className="bg-white py-20 sm:py-28">
-      <p className="text-indigo-600 uppercase tracking-wide text-sm font-semibold text-center">
-        FEATURES
-      </p>
+      <div className="text-center">
+        <p className="text-indigo-600 uppercase tracking-wide text-sm font-semibold">
+          +120 HANDCODED BLOCKS
+        </p>
 
-      <h3 className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900 leading-snug text-center">
-        Everything you need to build modern experiences
-      </h3>
+        <h3
+          className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900 leading-snug"
+          style={{ fontFamily: "var(--font-space-grotesk)" }}
+        >
+          Mixland helps you <br /> build beautiful websites
+        </h3>
+      </div>
+
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid layout: left text + right image */}
         <div className="grid grid-cols-1 md:grid-cols-[30%_70%] gap-12 items-start">
-          {/* LEFT SIDE — 30% */}
-          <div className="mt-10 flex flex-col gap-6">
-            <FeatureCard />
-            <FeatureCard />
-            <FeatureCard />      
+          {/* left div */}
+          <div className="mt-10 flex flex-col gap-2">
+            {features.map((f, index) => (
+              <FeatureCard
+                key={index}
+                icon={f.icon}
+                title={f.title}
+                description={f.description}
+              />
+            ))}
           </div>
 
-          {/* RIGHT SIDE — 70% */}
+          {/* Right div */}
           <div className="w-full flex justify-center items-start max-h-[450px]">
             <Image
               src="/images/feature1.svg"

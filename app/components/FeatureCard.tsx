@@ -1,9 +1,39 @@
-import React from 'react'
+import Image from "next/image";
 
-const FeatureCard = () => {
-  return (
-    <div className="border border-gray-200 rounded-xl p-6 shadow-sm"></div>
-  )
+interface FeatureCardProps {
+  icon: string;
+  title: string;
+  description: string;
 }
 
-export default FeatureCard
+export default function FeatureCard({
+  icon,
+  title,
+  description,
+}: FeatureCardProps) {
+  return (
+    <div className="w-full max-w-[416px] bg-white border border-gray-200 rounded-xl shadow-sm p-4 flex gap-4 sm:gap-5">
+      {/* Icon */}
+      <div className="flex-shrink-0">
+        <Image
+          src={icon}
+          alt={`${title} icon`}
+          width={50}
+          height={50}
+          className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+        />
+      </div>
+
+      {/* Card Content */}
+      <div className="flex flex-col">
+        <h4 className="text-lg sm:text-xl font-bold text-gray-900 leading-tight">
+          {title}
+        </h4>
+
+        <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
+          {description}
+        </p>
+      </div>
+    </div>
+  );
+}
