@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["var(--font-inter)"],
-        display: ["var(--font-space-grotesk)"],
+        inter: "var(--font-inter)",
+        spacegrotesk: "var(--font-space-grotesk)",
       },
     },
   },
