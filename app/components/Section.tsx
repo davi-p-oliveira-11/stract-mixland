@@ -1,4 +1,3 @@
-// components/Section.tsx
 import { FC, ReactNode } from "react";
 
 interface SectionProps {

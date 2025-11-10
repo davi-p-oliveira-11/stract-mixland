@@ -1,4 +1,3 @@
-// components/Container.tsx
 import { FC, ReactNode } from "react";
 
 interface ContainerProps {

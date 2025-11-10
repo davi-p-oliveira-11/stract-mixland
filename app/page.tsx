@@ -1,4 +1,3 @@
-// pages/index.tsx
 import Navbar from "@/app/(sections)/Navbar/Navbar";
 import HeroSection from "@/app/(sections)/HeroSection/HeroSection";
 import Features from "@/app/(sections)/Features/Features";
