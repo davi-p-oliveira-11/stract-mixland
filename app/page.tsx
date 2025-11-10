@@ -31,7 +31,11 @@ export default function HomePage() {
       <main className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
         <Features />
         <Features2 />
-        <Features3 />
+        <div className="w-full bg-gray-900">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <Features3 />
+          </div>      
+        </div> 
         <PricingSection />
         <TestimonialSection />
         <CTA />
