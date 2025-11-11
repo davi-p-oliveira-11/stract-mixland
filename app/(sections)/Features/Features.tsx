@@ -13,29 +13,36 @@ const Features = () => {
     {
       icon: "/icons/copy-paste.svg",
       title: "Simply Copy & Paste",
-      description: "Many desktop publishing packages and web page editors now use for them.",
+      description:
+        "Many desktop publishing packages and web page editors now use for them.",
     },
     {
       icon: "/icons/customize.svg",
       title: "Easy to customize",
-      description: "Many desktop publishing packages and web page editors now use for them.",
+      description:
+        "Many desktop publishing packages and web page editors now use for them.",
     },
     {
       icon: "/icons/vs-code-blue.svg",
       title: "Made with TailwindCSS",
-      description: "Many desktop publishing packages and web page editors now use for them.",
+      description:
+        "Many desktop publishing packages and web page editors now use for them.",
     },
   ];
 
   return (
     <section className="bg-white py-20 sm:py-28">
       <div className="text-center">
-        <p className="text-indigo-600 uppercase tracking-wide text-sm font-semibold">
+        <p
+          className="text-[#2B59FF] uppercase tracking-wide font-semibold
+                text-xs sm:text-sm md:text-base"
+        >
           +120 HANDCODED BLOCKS
         </p>
 
         <h3
-          className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900 leading-snug"
+          className="mt-3 font-bold text-gray-900 leading-tight
+               text-2xl sm:text-3xl md:text-5xl"
           style={{ fontFamily: "var(--font-space-grotesk)" }}
         >
           Mixland helps you <br /> build beautiful websites

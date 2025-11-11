@@ -26,11 +26,11 @@ export default function FeatureCard({
 
       {/* Card Content */}
       <div className="flex flex-col">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 leading-tight">
+        <h4 className="font-bold text-[18px] sm:text-[20px] md:text-[21px] text-gray-900 leading-tight">
           {title}
         </h4>
 
-        <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
+        <p className="mt-2 text-[14px] sm:text-[15px] md:text-[16px] text-gray-600 leading-relaxed">
           {description}
         </p>
       </div>
