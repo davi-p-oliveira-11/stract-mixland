@@ -35,11 +35,15 @@ const Features2 = () => {
 
           {/* Right div- Text */}
           <div className="flex flex-col">
-            <h4 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-snug">
+            <h4
+              className="mt-3 font-bold text-gray-900 leading-tight
+               text-2xl sm:text-3xl md:text-5xl"
+              style={{ fontFamily: "var(--font-space-grotesk)" }}
+            >
               {sectionContent.title}
             </h4>
 
-            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
+            <p className="mt-6 text-[14px] sm:text-[16px] md:text-[20px] text-gray-700 leading-relaxed">
               {sectionContent.description}
             </p>
           </div>
