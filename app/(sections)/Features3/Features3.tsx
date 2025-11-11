@@ -12,7 +12,7 @@ const Features3 = () => {
 
   const sectionContent: sectionContent = {
     image: "/images/showcase1.svg",
-    title: "Powerful tools to accelerate your workflow",
+    title: "Effectively track real-time and updates from team management",
     description:
       " Build modern, responsive landing pages with clean, maintainable components and rock-solid structure. Perfect for startups, SaaS, and agencies looking to convert more users.",
     reverse: false,
@@ -25,17 +25,26 @@ const Features3 = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Right div- Text */}
           <div className="flex flex-col">
-            <h4 className="text-3xl sm:text-4xl font-bold text-white leading-snug">
+            <h4
+              className="mt-3 font-bold text-white leading-tight
+                 text-2xl sm:text-3xl md:text-5xl"
+              style={{ fontFamily: "var(--font-space-grotesk)" }}
+            >
               {sectionContent.title}
             </h4>
 
-            <p className="mt-4 text-base sm:text-lg text-gray-400 leading-relaxed">
+            <p className="mt-6 text-[14px] sm:text-[16px] md:text-[20px] text-white leading-relaxed">
               {sectionContent.description}
             </p>
 
-            <div className="mt-4 flex flex-col sm:flex-row gap-8 justify-center">
-              <Counter target={2000} label="Projects Done" />
-              <Counter target={3000} label="Happy Clients" />
+            <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start gap-10 sm:gap-36">
+              <div className="max-w-[120px] sm:max-w-[150px] mx-auto sm:mx-0">
+                <Counter target={36} label="Projects Done" />
+              </div>
+
+              <div className="max-w-[120px] sm:max-w-[150px] mx-auto sm:mx-0">
+                <Counter target={92} label="Happy Clients" />
+              </div>
             </div>
           </div>
 
