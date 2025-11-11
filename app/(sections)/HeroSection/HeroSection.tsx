@@ -22,22 +22,21 @@ const HeroSection = () => {
     <section className="bg-gray-900 text-white py-16 sm:py-24">
       <div className="max-w-[900px] mx-auto px-4 text-center">
         <h1 
-          className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight"
+          className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] font-bold leading-tight"
           style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
           {heroContent.title}
         </h1>
 
-        <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
+        <p className="mt-6 text-[14px] sm:text-[16px] md:text-[20px] text-gray-400 leading-relaxed">
           {heroContent.subtitle}
         </p>
 
         <div className="mt-10 flex justify-center items-center gap-6">
           <Button
             variant="primary"
-            size="md"
             fullWidth={false}
-            className="px-6 py-3 sm:px-8 sm:py-4"
+            className="text-sm sm:text-base px-5 py-3 sm:px-6 sm:py-3 whitespace-nowrap"
           >
             {heroContent.ctaLabel}
           </Button>
