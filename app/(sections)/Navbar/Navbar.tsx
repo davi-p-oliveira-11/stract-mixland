@@ -52,7 +52,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white z-50">
       <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 py-4 md:px-12">
         {/* Logo */}
-        <div className="shrink-0 cursor-pointer">
+        <Link href="/" className="shrink-0 cursor-pointer">
           <Image
             src={navbarData.logo.src}
             alt={navbarData.logo.alt}
@@ -61,10 +61,10 @@ export default function Navbar() {
             className="w-28 sm:w-32 md:w-36 h-auto"
             priority
           />
-        </div>
+        </Link>
 
         {/* Center Links */}
-        <ul className="hidden [@media(min-width:820px)]:flex space-x-10 text-base font-semibold">
+        <ul className="hidden [@media(min-width:820px)]:flex space-x-10 text-base">
           {navbarData.links.map((link) => (
             <li key={link.href}>
               <Link
