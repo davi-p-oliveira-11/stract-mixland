@@ -21,16 +21,18 @@ const Button: FC<ButtonProps> = ({
     secondary: "bg-gray-900 text-black hover:bg-gray-900",
   };
 
-  const sizeClasses = {
-    sm: "px-4 py-2 text-sm rounded-md",
-    md: `
-    w-[160px] h-[45px] px-[16px] py-[12px] text-sm rounded-sm
-    sm:w-[175px] sm:h-[48px] sm:px-[18px] sm:py-[14px] sm:text-base rounded-sm
-    md:w-[187px] md:h-[50px] md:px-[20px] md:py-[16px] md:text-base rounded-sm
-    lg:w-[200px] lg:h-[55px] lg:text-lg
+ const sizeClasses = {
+  sm: "px-4 py-2 text-sm rounded-md",
+
+  md: `
+    px-[20px] py-[16px] text-base rounded-sm
+    sm:px-[22px] sm:py-[16px]
+    md:px-[24px] md:py-[16px]
   `,
-    lg: "px-8 py-4 text-lg rounded-full",
-  };
+
+  lg: "px-8 py-4 text-lg rounded-full",
+};
+
 
   return (
     <button
