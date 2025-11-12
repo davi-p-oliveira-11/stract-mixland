@@ -43,7 +43,7 @@ export default function HomePage() {
       {/* CTA */}
       <Section bg="bg-[#2B59FF]" textColor="text-white">
         <Container>
-          <CTA />
+          <CTA title={""} subtitle={""} primaryLabel={""} secondaryLabel={""} />
         </Container>
       </Section>
 
