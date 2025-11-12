@@ -14,7 +14,7 @@ export default function FeatureCard({
   return (
     <div className="w-full max-w-[416px] bg-white border border-gray-200 rounded-xl shadow-sm p-4 flex gap-4 sm:gap-5">
       {/* Icon */}
-      <div className="flex-shrink-0">
+      <div className="shrink-0">
         <Image
           src={icon}
           alt={`${title} icon`}
