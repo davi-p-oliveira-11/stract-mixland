@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       {/* Header */}
-      <Section bg="bg-gray-900" textColor="text-white" paddingY="pt-[80px] md:pt-[100px] pb-20">
+      <Section bg="bg-[#12141D]" textColor="text-white" paddingY="pt-[80px] md:pt-[100px] pb-20">
         <Container>
           <Navbar />
           <HeroSection />
@@ -28,7 +28,7 @@ export default function HomePage() {
       </Container>
 
       {/* Features 3 */}
-      <Section bg="bg-gray-900" textColor="text-white">
+      <Section bg="bg-[#12141D]" textColor="text-white">
         <Container>
           <Features3 />
         </Container>

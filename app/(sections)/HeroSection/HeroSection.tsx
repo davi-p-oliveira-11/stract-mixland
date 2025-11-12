@@ -19,7 +19,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-16 sm:py-24">
+    <section className="bg-[#12141D] text-white py-16 sm:py-24">
       <div className="max-w-[900px] mx-auto px-4 text-center">
         <h1 
           className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] font-bold leading-tight"

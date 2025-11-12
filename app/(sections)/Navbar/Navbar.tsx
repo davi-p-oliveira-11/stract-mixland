@@ -49,7 +49,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#12141D] text-white z-50">
       <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 py-4 md:px-12">
         {/* Logo */}
         <Link href="/" className="shrink-0 cursor-pointer">
