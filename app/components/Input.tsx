@@ -1,4 +1,5 @@
-"use client";
+{/*
+  "use client";
 
 import { useState } from "react";
 import { z } from "zod";
@@ -40,3 +41,5 @@ export default function FooterForm() {
     </form>
   );
 }
+
+*/}
