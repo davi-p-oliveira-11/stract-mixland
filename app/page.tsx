@@ -48,7 +48,7 @@ export default function HomePage() {
       </Section>
 
       {/* Footer */}
-      <Section bg="bg-gray-900" textColor="text-white">
+      <Section bg="bg-[#12141D]" textColor="text-white">
         <Container>
           <Footer />
         </Container>
